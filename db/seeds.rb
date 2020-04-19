@@ -297,7 +297,7 @@ others_child_array.each_with_index do |child, i|
   end
 end
 
-User.create!(
+man = User.create!(
   nickname:'まーたろー',
   email:'hoge@hoge',
   password:'11111111',
@@ -315,4 +315,24 @@ User.create!(
   birthyear_id:'20',
   birthmonth_id:'5',
   birthday_id:'20'
+)
+
+woman = User.create!(
+  nickname:'あやや',
+  email:'fuga@fuga',
+  password:'1234567',
+  password_confirmation:'1234567',
+  lastname:'山田',
+  firstname:'彩',
+  zipcode:'123-4567',
+  pref_id:'13',
+  city:'渋谷',
+  address:'神南 1-14-17',
+  buildingname:'FRAME 4階',
+  phone:'08000000000',
+  lastname_kana:'ヤマダ',
+  firstname_kana:'アヤ',
+  birthyear_id:'22',
+  birthmonth_id:'7',
+  birthday_id:'7'
 )
